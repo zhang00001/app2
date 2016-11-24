@@ -5,6 +5,7 @@ var Login = (function () {
     function Login() {
         this.$el = $('.login.page');
         this.$username = this.$el.find('#username');
+        this.$tree = $('.trunk, .trunk div');
         this.backgroundImages = ["https://www.lawyered.in/static/all_images/banner_images/banner_home1.4d06f0909844.jpg",
             '//blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg.jpg',
             "http://www.webhek.com/misc-res/unitethelovers/content/image/bg.jpg",
@@ -15,8 +16,17 @@ var Login = (function () {
             'image/1501503.jpg'];
         this.$el.fadeIn(4000); //淡入背景图  fadeOut  淡出
         this.carouseBackground();
+        //树自动修改颜色
+        this.carouselTreeColor();
     }
-    Login.prototype.checkUser = function () {
+    Login.prototype.carouselTreeColor = function () {
+        var _this = this;
+        setInterval(function () {
+            var _a = [parseInt(Math.random() * 10 + ''), parseInt(Math.random() * 10 + ''), parseInt(Math.random() * 10 + '')], r = _a[0], g = _a[1], b = _a[2];
+            _this.$tree.css('background', "#" + r + g + b);
+        }, 3000);
+    };
+    Login.prototype.checkUsername = function () {
         var username = this.$username.val();
         if (/^1[3-9]\d{9}$/.test(username)) {
         }

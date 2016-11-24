@@ -1,0 +1,34 @@
+.navbar {
+  background-color: #2385a1;
+  background-image: none; }
+  .navbar .navbar-brand > img {
+    position: relative;
+    bottom: 10px; }
+  .navbar .navbar-nav > li > a {
+    color: #fff; }
+    .navbar .navbar-nav > li > a:hover {
+      color: #fff; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; }
+
+#home {
+  background: url(../image/home.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 600px; }
+  #home .overlay {
+    background: rgba(35, 133, 161, 0.75);
+    min-height: 600px;
+    color: #fff;
+    padding-top: 90px; }
+    #home .overlay h1 {
+      padding-top: 80px;
+      font-weight: 900;
+      font-size: 100px;
+      font-family: 'Browallia New'; }
+    #home .overlay h2 {
+      font-size: 30px; }
+    #home .overlay .p-cls {
+      padding-top: 30px;
+      padding-bottom: 40px; }
