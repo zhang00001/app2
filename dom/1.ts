@@ -17,9 +17,18 @@
 
 
 var table = <HTMLTableElement>document.getElementById('table');
-for (var i = 0; i < table.rows.length; i++) {
-    var row = table.rows.item(i);
-    if (i % 2 == 0) {
-        row.style.background = "blue";
-    }
-}
+
+//往表单插入100行
+for (var i = 0; i < 100; i++) {
+    var row = table.insertRow();
+    row.textContent = "新增一行";
+    var [r, g, b] = [parseInt(Math.random() * 10 + ''),
+    parseInt(Math.random() * 10 + ''),
+    parseInt(Math.random() * 10 + '')
+    ];
+    row.style.background = `#${r}${g}${b}`;
+    // var row = table.rows.item(i);
+    // if (i % 2 == 0) {
+    //     row.style.background = "blue";
+    // }
+   }

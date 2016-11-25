@@ -1,22 +1,22 @@
 .navbar {
   background-color: #2385a1;
-  background-image: none; }
-  .navbar .navbar-brand > img {
-    position: relative;
-    bottom: 10px; }
-  .navbar .navbar-nav > li > a {
+  background-image: none;
+  /*border-bottom: 0;*/ }
+  .navbar .navbar-brand {
+    padding: 0; }
+  .navbar .nav.navbar-nav li a {
     color: #fff; }
-    .navbar .navbar-nav > li > a:hover {
+    .navbar .nav.navbar-nav li a:hover {
       color: #fff; }
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff; }
+  .navbar .navbar-toggle .icon-bar {
+    background-color: #fff; }
 
 #home {
   background: url(../image/home.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  min-height: 600px; }
+  min-height: 600px;
+  margin-top: 50px; }
   #home .overlay {
     background: rgba(35, 133, 161, 0.75);
     min-height: 600px;

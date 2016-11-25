@@ -1,44 +1,58 @@
- .navbar {
-     background-color: #2385a1;
-     background-image: none;
-     .navbar-brand>img {
-         position: relative;
-         bottom: 10px;
-     }
-     .navbar-nav>li>a {
-         &:hover {
-             color: #fff;
-         }
-         color: #fff;
-     }
- }
- 
- .navbar-default .navbar-toggle .icon-bar {
-     background-color: #fff;
- }
- 
- #home {
-     background: url(../image/home.jpg) no-repeat center center;
-     background-size: cover;
-     width: 100%;
-     min-height: 600px;
-     .overlay {
-         background: rgba(35, 133, 161, 0.75);
-         min-height: 600px;
-         color: #fff;
-         padding-top: 90px;
-         h1 {
-             padding-top: 80px;
-             font-weight: 900;
-             font-size: 100px;
-             font-family: 'Browallia New';
-         }
-         h2 {
-             font-size: 30px;
-         }
-         .p-cls {
-             padding-top: 30px;
-             padding-bottom: 40px;
-         }
-     }
- }
+//导航栏
+.navbar {
+    background-color: #2385a1;
+    background-image: none;
+    /*border-bottom: 0;*/
+    //logo图片
+    .navbar-brand {
+        padding: 0;
+    }
+    //导航栏菜单
+    .nav.navbar-nav li a {
+        &:hover {
+            color: #fff;
+        }
+        color: #fff;
+    }
+    //开关按钮
+    .navbar-toggle {
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+}
+
+//Home
+#home {
+    background: url(../image/home.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    margin-top: 50px;
+    .overlay {
+        background: rgba(35, 133, 161, 0.75);
+        min-height: 600px;
+        color: #fff;
+        padding-top: 90px;
+        h1 {
+            padding-top: 80px;
+            font-weight: 900;
+            font-size: 100px;
+            font-family: 'Browallia New';
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .p-cls {
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+#service {
+    .head-set {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

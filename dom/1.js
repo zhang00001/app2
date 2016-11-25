@@ -10,10 +10,14 @@
 // location.protocol  //拿到地理位置
 // screen.height  //屏幕高
 var table = document.getElementById('table');
-for (var i = 0; i < table.rows.length; i++) {
-    var row = table.rows.item(i);
-    if (i % 2 == 0) {
-        row.style.background = "blue";
-    }
+//往表单插入100行
+for (var i = 0; i < 100; i++) {
+    var row = table.insertRow();
+    row.textContent = "新增一行";
+    var _a = [parseInt(Math.random() * 10 + ''),
+        parseInt(Math.random() * 10 + ''),
+        parseInt(Math.random() * 10 + '')
+    ], r = _a[0], g = _a[1], b = _a[2];
+    row.style.background = "#" + r + g + b;
 }
 //# sourceMappingURL=1.js.map
