@@ -23,7 +23,7 @@ tsc -w   或者 tsc --watch
 // gulp gulp-sass
 cnpm install gulp gulp-sass
 
-
+                                                      
 ```
 # npm 指令
 * 装包到node_modules文件下  

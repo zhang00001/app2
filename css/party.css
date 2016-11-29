@@ -1,0 +1,17 @@
+.navbar-default {
+  background: url(../image/background.png), #9c1e2e no-repeat;
+  border-color: #9c12e2;
+  border-radius: 0; }
+
+.navbar-brand img {
+  vertical-align: middle;
+  width: 209px;
+  height: 26px; }
+
+.navbar-default .navbar-nav li a {
+  color: #fff; }
+
+.navbar-default .navbar-nav li a {
+  color: #fff; }
+  .navbar-default .navbar-nav li a:hover {
+    color: #fff; }
