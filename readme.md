@@ -31,7 +31,7 @@ cnpm install gulp gulp-sass
 @type/jquery,@type/bootstrap,gulp-sass,gulp
 cnpm install xxxx(文件名) --save
 
-装包到全局  typescript,ts-node lite-server ,gulp-cli,ionic,ng-cli,cordove
+装包到全局  typescript,ts-node lite-server ,gulp-cli,ionic,ng-cli,cordove,font-awesome
 cnpm install xxxx -g
 
 

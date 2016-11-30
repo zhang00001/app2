@@ -1,26 +1,62 @@
-.navbar-default {
-    background: url(../image/background.png), #9c1e2e no-repeat;
-    border-color: #9c12e2;
-    border-radius: 0;
+$navbarColor:#9c1e2e;
+body {
+    .navbar {
+        background: url(../image/background.png);
+        background-size: cover;
+    }
+    /*logo*/
+    .navbar-brand img {
+        margin-top: -4px;
+        max-height: 28px;
+    }
+    //下拉菜单 背景颜色
+    .dropdown>a,
+    .dropdown a:hover,
+    .dropdown.open>a,
+    .dropdown a:visited {
+        background: $navbarColor;
+    }
+    .dropdown-toggle {
+        color: #fff !important;
+        //上下边距 1px
+        margin: 1px 0;
+        /*背景透明*/
+        background: transparent !important;
+        //没有盒子阴影
+        box-shadow: none !important;
+    }
+    .carousel-indicators li {
+        background: #9dc819 none repeat scroll 0 0;
+        opacity: 1;
+        .active {
+            background: #390b1f none repeat scroll 0 0;
+        }
+    }
 }
 
-.navbar-brand img {
-    vertical-align: middle;
-    width: 209px;
-    height: 26px;
-}
-
-.navbar-default .navbar-nav li a {
-    color: #fff;
-}
-
-.navbar-default .navbar-nav {
-    li {
-        a {
-            color: #fff;
-            &:hover {
+//媒体查询
+@media only screen and(max-width:767px) {
+    body {
+        .navbar-brand {
+            margin-top: -10px;
+            span {
                 color: #fff;
+                display: inline-block !important;
             }
+            width: 100%;
+            img {
+                display: inline-block;
+            }
+        }
+        .dropdown-menu {
+            background: url(../image/background.png);
+            background-size: cover;
+            a {
+                color: #fff !important;
+            }
+        }
+        .item img {
+            display: inline-block;
         }
     }
 }
