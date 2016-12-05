@@ -1,0 +1,124 @@
+       $navbarColor:#9c1e2e;
+       body {
+           .navbar {
+               background: url(../image/background.png);
+               background-size: cover;
+               border: none;
+               margin-top: -1px;
+           }
+           /*logo*/
+           .navbar-brand img {
+               margin-top: -4px;
+               max-height: 28px;
+           }
+           //下拉菜单 背景颜色
+           .dropdown>a,
+           .dropdown a:hover,
+           .dropdown.open>a,
+           .dropdown a:visited {
+               background: $navbarColor;
+           }
+           .dropdown-toggle {
+               color: #fff !important;
+               //上下边距 1px
+               margin: 1px 0;
+               /*背景透明*/
+               background: transparent !important;
+               //没有盒子阴影
+               box-shadow: none !important;
+           }
+           .carousel-indicators li {
+               background: #9dc819 none repeat scroll 0 0;
+               opacity: 1;
+               .active {
+                   background: #390b1f none repeat scroll 0 0;
+               }
+           }
+           .front-page-header {
+               margin-top: 20px;
+               margin-bottom: 15px;
+               text-align: left;
+               a {
+                   font-weight: 500;
+                   color: #249126;
+                   &:hover {
+                       color: #23527c;
+                   }
+               }
+           }
+           .product-category-link {
+               color: #838383;
+               text-align: center;
+           }
+           .front-page-product-set-image-container {
+               position: relative;
+           }
+           .chinese-name {
+               h2 {
+                   display: inline;
+                   color: #838383;
+                   font-size: 14px;
+               }
+           }
+           table {
+               td {
+                   border-right: 1px solid #777777;
+                   font-size: 11px;
+                   margin: 0 auto;
+                   padding: 0;
+                   width: 10%;
+               }
+               .last {
+                   border: none;
+               }
+               .first {
+                   span {
+                       margin-left: 10px;
+                   }
+               }
+           }
+           .icp {
+               margin-top: 10px;
+               padding-top: 3px;
+               font-size: 9px;
+               height: 20px;
+           }
+           .weibo {
+               &:hover {
+                   color: #23527c !important;
+               }
+           }
+       }
+       
+       //媒体查询
+       @media only screen and(max-width:767px) {
+           body {
+               .navbar-brand {
+                   margin-top: -10px;
+                   span {
+                       color: #fff;
+                       display: inline-block !important;
+                   }
+                   width: 100%;
+                   img {
+                       display: inline-block;
+                   }
+               }
+               .dropdown-menu {
+                   background: url(../image/background.png);
+                   background-size: cover;
+                   a {
+                       color: #fff !important;
+                   }
+               }
+               .item img {
+                   display: inline-block;
+               }
+           }
+           .chinese-name {
+               h2,
+               span {
+                   display: block;
+               }
+           }
+       }
