@@ -1,8 +1,7 @@
     $navbarColor:#9c1e2e;
     body {
         .navbar {
-            background: url(../image/background.png);
-            background-size: cover;
+            background: url(../image/background.png), #9c1e2e repeat-x;
             border: none;
             margin-top: -1px;
         }
@@ -88,6 +87,10 @@
                 color: #23527c !important;
             }
         }
+        .img2 {
+            width: 100%;
+            height: auto;
+        }
     }
     
     //媒体查询
@@ -120,5 +123,20 @@
             span {
                 display: block;
             }
+        }
+    }
+    
+    @media (max-width:1000px) and(min-width:760px) {
+        .container1 {
+            width: 100%;
+            ul {
+                li {
+                    padding: 0!important;
+                    margin: 0!important;
+                }
+            }
+        }
+        .logo2 {
+            margin-top: -4px !important;
         }
     }

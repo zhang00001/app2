@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>派悦坊</title>
+    <title>派悦坊2</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -19,14 +19,14 @@
 
     <!--导航栏-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container container1">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 
                 <a class="navbar-brand" href="#">
                     <span class="visible-xs pull-left text-center center-block" style="vertical-align:middle;line-height:40px;" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 未登录</span>
-                    <img class="visible-lg visible-md" src="image/logo.png">
-                    <img class="visible-sm visible-xs  center-block" style="vertical-align: middle;margin-top:6px;" src="image/logo.png">
+                    <img class="visible-lg visible-md " src="image/logo.png">
+                    <img class="visible-sm visible-xs logo2 center-block " style="vertical-align: middle;margin-top:8px;" src="image/logo.png">
 
                     <!--小屏幕-->
                     <span class="visible-xs  pull-right navbar-right" style="font-variant:middle;font-size:29px;position:relative;top:-28px;"><i class="fa fa-phone"></i></span>
@@ -35,7 +35,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav ">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">运送至：北京 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -75,8 +75,18 @@
 
                         </ul>
                     </li>
+
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
+                    </li>
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">注册</a>
+                    </li>
+                    <li class="dropdown hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i></a>
+                    </li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right visible-md visible-lg ">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
                     </li>
@@ -89,8 +99,9 @@
                 </ul>
             </div>
         </div>
+
         <!--小手机的显示-->
-        <div class="container visible-xs visible-sm " style="position:relative;top:-10px;">
+        <div class="container visible-xs " style="background:#fff; margin-top:10px;">
             <!--首页-->
 
             <div class="col-xs-3 text-center">
@@ -112,7 +123,206 @@
 
 
         </div>
+
     </nav>
+
+
+
+
+
+
+
+
+    <!--产品列表-->
+    <div class="container">
+        <div class="row">
+            <!--左侧列表-->
+            <div class="col-md-2 col-md-2 hidden-xs" style="margin-top:65px;">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <!--圣诞精选-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          圣诞精选
+        </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">惊叹数心蛋糕</a></li>
+                                    <li><a href="#">惊叹数心蛋糕</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--迪士尼系列-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 迪士尼系类</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">冰雪奇缘套装</a></li>
+                                    <li><a href="#">冰雪奇缘迷你纸杯蛋糕</a></li>
+                                    <li><a href="#">冰雪奇缘树心蛋糕</a></li>
+                                    <li><a href="#">小熊维尼纸杯蛋糕礼盒</a></li>
+                                    <li><a href="#"> 爱丽丝梦游仙境红丝绒</a></li>
+                                    <li><a href="#">爱丽丝梦游仙境纸杯蛋糕</a></li>
+                                    <li> <a href="#">疯狂动物城纸杯蛋糕礼盒</a></li>
+                                    <li><a href="#">疯狂动物城大地女神蛋糕</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--礼盒-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> 礼盒 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">迷你挞礼盒</a></li>
+                                    <li><a href="#">迷你纸杯礼盒</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--蛋糕-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 蛋糕</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">红丝绒圆舞曲蛋糕</a></li>
+                                    <li><a href="#">柠檬裸蛋糕</a></li>
+                                    <li><a href="#">沉睡的黑森林</a></li>
+                                    <li><a href="#">摩卡裸蛋糕</a></li>
+                                    <li><a href="#">树莓红丝绒</a></li>
+                                    <li><a href="#">热情百香果蛋糕</a></li>
+                                    <li><a href="#">海盐焦糖南瓜慕斯</a></li>
+                                    <li><a href="#"> 大地女神的恩赐</a></li>
+                                    <li><a href="#">芒果空气感蛋糕</a></li>
+                                    <li><a href="#">淡奶焦糖香蕉蛋糕</a></li>
+                                    <li><a href="#">原味重乳酪</a></li>
+                                    <li><a href="#"> 巧克力物语</a></li>
+                                    <li><a href="#">大都会红丝绒</a></li>
+                                    <li> <a href="#">栗香</a></li>
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!--纸杯蛋糕-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> 纸杯蛋糕</a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">红丝绒</a></li>
+                                    <li><a href="#">蒙布朗栗香</a></li>
+                                    <li><a href="#">抹茶巧克力</a></li>
+                                    <li><a href="#">田园</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">百香果纸杯蛋糕</a></li>
+                                    <li><a href="#">百香果巧克力纸杯蛋糕</a></li>
+                                    <li><a href="#">南瓜纸杯蛋糕</a></li>
+                                    <li><a href="#">巧克力</a></li>
+                                    <li><a href="#">香蕉</a></li>
+                                    <li><a href="#">椰子</a></li>
+                                    <li><a href="#">柠檬</a></li>
+                                    <li><a href="#">抹茶</a></li>
+                                    <li><a href="#">摩卡纸杯蛋糕</a></li>
+                                    <li><a href="#">抹茶黑芝麻纸杯蛋糕</a></li>
+                                    <li><a href="#">黑森林</a></li>
+                                    <li><a href="#">姜饼人纸杯蛋糕</a></li>
+                                    <li><a href="#">薄荷巧克力</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--挞-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">挞</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">抹茶樱花挞（4个/组）</a></li>
+                                    <li><a href="#">薄荷巧克力挞（4个/组）</a></li>
+                                    <li><a href="#">黄桃挞（4个/组）</a></li>
+                                    <li><a href="#">柠檬蛋白挞（4个/组）</a></li>
+                                    <li><a href="#">椰子挞（4个/组）</a></li>
+                                    <li><a href="#">南瓜挞（4个/组）</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--派-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">派</a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="#">南瓜</a></li>
+                                    <li><a href="#">经典苹果</a></li>
+                                    <li><a href="#">法式布丁</a></li>
+                                    <li><a href="#">丝滑巧克力</a></li>
+                                    <li><a href="#">淡奶香蕉</a></li>
+                                    <li><a href="#">椰风密语</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--礼品卡-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">礼品卡</a>
+                            </h4>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <!--左侧的列表完-->
+        </div>
+        <!--整个大的页面完-->
+    </div>
+
 
 
 
